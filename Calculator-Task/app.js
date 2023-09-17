@@ -1,5 +1,17 @@
+var screen = document.getElementById("screen");
 function addToDisplay(value) {
-  document.getElementById("screen").value += value;
+  var input = screen.value;
+  var oprater = ["+", "-", "%", "/", "*"];
+  var last = input[input.length - 1];
+  var newInput = value;
+
+  if (oprater.indexOf(last) !== -1 && oprater.indexOf(newInput) !== -1) {
+    input = input.slice(0, -1) + newInput;
+  } else {
+    input += newInput;
+  }
+
+  screen.value = input;
 }
 
 function clearScreen() {
