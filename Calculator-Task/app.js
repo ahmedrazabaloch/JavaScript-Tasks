@@ -1,17 +1,21 @@
 var screen = document.getElementById("screen");
+
 function addToDisplay(value) {
-  var input = screen.value;
-  var oprater = ["+", "-", "%", "/", "*"];
-  var last = input[input.length - 1];
+  var calculatorValue = screen.value;
+  var operatorSign = ["+", "-", "%", "/", "*"];
+  var last = calculatorValue[calculatorValue.length - 1];
   var newInput = value;
 
-  if (oprater.indexOf(last) !== -1 && oprater.indexOf(newInput) !== -1) {
-    input = input.slice(0, -1) + newInput;
+  if (
+    operatorSign.indexOf(last) !== -1 &&
+    operatorSign.indexOf(newInput) !== -1
+  ) {
+    calculatorValue = calculatorValue.slice(0, -1) + newInput;
   } else {
-    input += newInput;
+    calculatorValue += newInput;
   }
 
-  screen.value = input;
+  screen.value = calculatorValue;
 }
 
 function clearScreen() {
