@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lamp On-Off</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .imgOnOff {
+        width: 20%;
+        min-height: 50vh;
+        margin: 10px auto;
+        border: 1px solid #000;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="imgOnOff">
+      <img
+        onmouseover="src='on.jpg'"
+        onmouseout="src='off.jpg'"
+        src="off.jpg"
+      />
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
