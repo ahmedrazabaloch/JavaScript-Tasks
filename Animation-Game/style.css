@@ -16,13 +16,22 @@
   bottom: 10%;
   height: 30%;
   left: 3%;
+  animation-name: roll;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 0.3s;
 }
-#rightCharactor {
-  right: 3%;
-  position: absolute;
-  bottom: 10%;
-  height: 30%;
-}
-#moveForward {
-  visibility: hidden;
+
+@keyframes roll {
+  0% {
+    transform: translateX(10px);
+  }
+  20% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(1000px);
+  }
+  
 }

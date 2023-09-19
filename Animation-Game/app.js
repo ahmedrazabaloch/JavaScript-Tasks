@@ -1,10 +1,12 @@
-var currentPosition = 10;
-var date = new Date();
-var movingStep = Math.floor(date.getSeconds());
 
 function moveForward(e) {
   var img = document.getElementById("charactor");
   img.value = e.src = "animation-img/chun-li/move-forward.gif";
-  e.style.left = movingStep + "%";
 }
-console.log(movingStep);
+
+function moving(e) {
+  document.getElementById("charactor").value = e.src =
+    "animation-img/chun-li/standing.gif";
+  e.style.animationName = "roll";
+  console.log("working");
+}
