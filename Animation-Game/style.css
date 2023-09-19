@@ -11,7 +11,7 @@
   height: 100vh;
   position: relative;
 }
-#leftCharactor {
+#charactor {
   position: absolute;
   bottom: 10%;
   height: 30%;
@@ -22,4 +22,7 @@
   position: absolute;
   bottom: 10%;
   height: 30%;
+}
+#moveForward {
+  visibility: hidden;
 }
