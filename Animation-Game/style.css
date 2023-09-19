@@ -13,13 +13,13 @@
 }
 #charactor {
   position: absolute;
-  bottom: 10%;
+  bottom: 5%;
   height: 30%;
-  left: 3%;
+  left: 20px;
   animation-name: roll;
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  animation-iteration-count: unset;
   animation-delay: 0.3s;
 }
 
@@ -33,5 +33,4 @@
   100% {
     transform: translateX(1000px);
   }
-  
 }
