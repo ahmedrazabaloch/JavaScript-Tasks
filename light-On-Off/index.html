@@ -12,19 +12,17 @@
       .imgOnOff {
         width: 40%;
         margin: 10px auto;
+        text-align: center;
       }
     </style>
   </head>
   <body>
     <div class="imgOnOff">
       <img onmouseover="hover(this)" onmouseout="out(this)" src="off.svg" />
-      <button class="btn">ON</button>
-      <button class="btn">OFF</button>
     </div>
     <script>
       function hover(e) {
         e.src = "on.svg";
-        // e.style.width = "100%";
       }
       function out(e) {
         e.src = "off.svg";
