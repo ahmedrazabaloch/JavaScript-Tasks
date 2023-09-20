@@ -3,7 +3,7 @@
   margin: 0;
 }
 .container {
-  background-image: url(animation-img/background3.gif);
+  background-image: url(animation-img/background5.gif);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,7 +13,7 @@
 }
 #charactor {
   position: absolute;
-  bottom: 5%;
-  height: 350px;
+  bottom: 80px;
+  height: 330px;
   left: 20px;
 }

@@ -2,7 +2,7 @@ var move = 0;
 
 function animation() {
   var charactor = document.getElementById("charactor");
-  if (event.keyCode === 68 && move < 1230) {
+  if (event.keyCode === 68 && move < 1300) {
     move = move + 10;
     charactor.style.left = move + "px";
     charactor.src = "animation-img/chun-li/move-forward.gif";
@@ -40,7 +40,7 @@ function animation() {
   }
   if (event.keyCode === 17) {
     charactor.src = "animation-img/chun-li/sitting-slap.gif";
-    charactor.style.height = "450px";
+    charactor.style.height = "400px";
 
     setTimeout(function () {
       charactor.src = "animation-img/chun-li/standing.gif";
