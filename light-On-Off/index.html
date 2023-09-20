@@ -14,11 +14,24 @@
         margin: 10px auto;
         text-align: center;
       }
+      .imgOnOff button {
+        width: 25%;
+        padding: 5px 0;
+        margin: 0 5px;
+        font-size: 18px;
+      }
     </style>
   </head>
   <body>
     <div class="imgOnOff">
-      <img onmouseover="hover(this)" onmouseout="out(this)" src="off.svg" />
+      <img
+        id="blub"
+        onmouseover="hover(this)"
+        onmouseout="out(this)"
+        src="off.svg"
+      />
+      <button id="lightOn" onclick="lightOn()">ON</button>
+      <button id="lightOff" onclick="lightOff()">OFF</button>
     </div>
     <script>
       function hover(e) {
@@ -26,6 +39,14 @@
       }
       function out(e) {
         e.src = "off.svg";
+      }
+      function lightOn() {
+        var blubOn = document.getElementById("blub");
+        blubOn.src = "on.svg";
+      }
+      function lightOff() {
+        var blubOff = document.getElementById("blub");
+        blubOff.src = "off.svg";
       }
     </script>
   </body>
