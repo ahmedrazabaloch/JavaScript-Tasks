@@ -1,3 +1,26 @@
+/* let timeInSeconds = 60;
+
+// Function to update the timer display
+function updateTimer() {
+    const timerElement = document.getElementById('timer');
+    timerElement.textContent = timeInSeconds + ' seconds';
+
+    if (timeInSeconds === 0) {
+        timerElement.textContent = 'Time\'s up!';
+        clearInterval(interval);
+    } else {
+        timeInSeconds--;
+    }
+}
+
+// Call the updateTimer function every second
+const interval = setInterval(updateTimer, 1000); 
+
+    <p id="timer">60 seconds</p>
+
+
+*/
+
 //                >>>>>>> Left Side Character <<<<<<<<
 
 var rightMove = 0;
@@ -9,12 +32,20 @@ function leftAnimation() {
     rightMove = rightMove + 10;
     rightCharacter.style.left = rightMove + "px";
     rightCharacter.src = "animation-img/Sol-badguy/forwardMove.gif";
+    setTimeout(function () {
+      rightCharacter.src = "animation-img/Sol-badguy/action.gif";
+      rightCharacter.style.height = "350px";
+    }, 1000);
   }
   if (event.keyCode === 65 && rightMove > 10) {
     // 65 ===> A
     rightMove = rightMove - 10;
     rightCharacter.style.left = rightMove + "px";
     rightCharacter.src = "animation-img/Sol-badguy/backwardMove.gif";
+    setTimeout(function () {
+      rightCharacter.src = "animation-img/Sol-badguy/action.gif";
+      rightCharacter.style.height = "350px";
+    }, 1000);
   }
   if (event.keyCode === 87) {
     // 87 ===> W
@@ -28,7 +59,7 @@ function leftAnimation() {
   if (event.keyCode === 83) {
     // 83 ===> S
     rightCharacter.src = "animation-img/Sol-badguy/flip kick.gif";
-    rightCharacter.style.height = "450px";
+    rightCharacter.style.height = "400px";
 
     setTimeout(function () {
       rightCharacter.src = "animation-img/Sol-badguy/action.gif";
@@ -37,27 +68,27 @@ function leftAnimation() {
   }
   if (event.keyCode === 32) {
     // 32 ===> SPACE
-    rightCharacter.src = "animation-img/Sol-badguy/jump.gif";
+    rightCharacter.src = "animation-img/Sol-badguy/power-kick.gif";
     rightCharacter.style.height = "450px";
 
     setTimeout(function () {
       rightCharacter.src = "animation-img/Sol-badguy/action.gif";
       rightCharacter.style.height = "330px";
-    }, 1200);
+    }, 1500);
   }
   if (event.keyCode === 17) {
     // 17 ===> CTRL
-    rightCharacter.src = "animation-img/Sol-badguy/power-plus.gif";
-    rightCharacter.style.height = "400px";
+    rightCharacter.src = "animation-img/Sol-badguy/flaying-punch.gif";
+    rightCharacter.style.height = "650px";
 
     setTimeout(function () {
       rightCharacter.src = "animation-img/Sol-badguy/action.gif";
       rightCharacter.style.height = "330px";
-    }, 3000);
+    }, 1500);
   }
 }
 
-window.onkeydown = leftAnimation;
+// window.onkeydown = leftAnimation;
 
 //                >>>>>>> Right Side Character <<<<<<<<
 
@@ -90,14 +121,13 @@ function rightAnimation() {
   if (event.keyCode === 104) {
     // 104 ===> Num Pad NO 8
     charactor.src = "animation-img/Terry-Bogard/punchBigFire.gif";
-    charactor.style.height = "450px";
     charactor.style.height = "1000px";
     charactor.style.bottom = "0px";
 
     setTimeout(function () {
       charactor.src = "animation-img/Terry-Bogard/starting.gif";
       charactor.style.height = "330px";
-      charactor.style.bottom = "80px";
+      charactor.style.bottom = "30px";
     }, 4000);
   }
   if (event.keyCode === 98) {
@@ -129,9 +159,11 @@ function rightAnimation() {
     setTimeout(function () {
       charactor.src = "animation-img/Terry-Bogard/starting.gif";
       charactor.style.height = "330px";
-      charactor.style.bottom = "80px";
+      charactor.style.bottom = "30px";
     }, 3000);
   }
 }
 
 // window.onkeydown = rightAnimation;
+window.addEventListener("keydown", leftAnimation);
+window.addEventListener("keydown", rightAnimation);

@@ -1,9 +1,10 @@
 * {
   padding: 0;
   margin: 0;
+  overflow: hidden;
 }
 .container {
-  background-image: url(animation-img/background5.gif);
+  background-image: url(animation-img/background2.gif);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,13 +14,13 @@
 }
 #leftCharactor {
   position: absolute;
-  bottom: 80px;
+  bottom: 30px;
   height: 390px;
   left: 0px;
 }
 #rightCharactor {
   position: absolute;
-  bottom: 80px;
+  bottom: 30px;
   height: 330px;
   right: 80px;
 }
