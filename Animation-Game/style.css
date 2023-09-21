@@ -11,9 +11,15 @@
   height: 100vh;
   position: relative;
 }
-#charactor {
+#leftCharactor {
+  position: absolute;
+  bottom: 80px;
+  height: 390px;
+  left: 0px;
+}
+#rightCharactor {
   position: absolute;
   bottom: 80px;
   height: 330px;
-  left: 0px;
+  right: 80px;
 }
