@@ -1,4 +1,4 @@
-var timeInSeconds = 60;
+var timeInSeconds = 3;
 
 function updateTimer() {
   const timerElement = document.getElementById("timer");
@@ -8,10 +8,11 @@ function updateTimer() {
     timerElement.textContent = "Time's up!";
     timerElement.style.fontSize = "2em";
     clearInterval(interval);
-    swal({
-      title: "Time's Up!",
-      imageUrl: "animation-img/gameOver.png",
-    });
+    // swal({
+    //   title: "Time's Up!",
+    //   text: "",
+    //   imageUrl: "animation-img/gameOver.png",
+    // });
   } else {
     timeInSeconds--;
   }
