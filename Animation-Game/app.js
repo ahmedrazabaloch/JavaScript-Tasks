@@ -1,25 +1,18 @@
-/* let timeInSeconds = 60;
+var timeInSeconds = 60;
 
-// Function to update the timer display
 function updateTimer() {
-    const timerElement = document.getElementById('timer');
-    timerElement.textContent = timeInSeconds + ' seconds';
+  const timerElement = document.getElementById("timer");
+  timerElement.textContent = timeInSeconds + " seconds";
 
-    if (timeInSeconds === 0) {
-        timerElement.textContent = 'Time\'s up!';
-        clearInterval(interval);
-    } else {
-        timeInSeconds--;
-    }
+  if (timeInSeconds === 0) {
+    timerElement.textContent = "Time's up!";
+    clearInterval(interval);
+  } else {
+    timeInSeconds--;
+  }
 }
 
-// Call the updateTimer function every second
-const interval = setInterval(updateTimer, 1000); 
-
-    <p id="timer">60 seconds</p>
-
-
-*/
+const interval = setInterval(updateTimer, 1000);
 
 //                >>>>>>> Left Side Character <<<<<<<<
 
@@ -87,8 +80,6 @@ function leftAnimation() {
     }, 1500);
   }
 }
-
-// window.onkeydown = leftAnimation;
 
 //                >>>>>>> Right Side Character <<<<<<<<
 
@@ -164,6 +155,5 @@ function rightAnimation() {
   }
 }
 
-// window.onkeydown = rightAnimation;
 window.addEventListener("keydown", leftAnimation);
 window.addEventListener("keydown", rightAnimation);
