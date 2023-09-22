@@ -110,7 +110,7 @@ function rightAnimation() {
     charactor.src = "animation-img/Terry-Bogard/walkforward.gif";
 
     setTimeout(function () {
-      charactor.src = "animation-img/Terry-Bogard/starting.gif";
+      charactor.src = "animation-img/Terry-Bogard/standingPositions.gif";
       charactor.style.height = "330px";
     }, 1000);
   }
@@ -121,7 +121,7 @@ function rightAnimation() {
     charactor.style.bottom = "0px";
 
     setTimeout(function () {
-      charactor.src = "animation-img/Terry-Bogard/starting.gif";
+      charactor.src = "animation-img/Terry-Bogard/standingPositions.gif";
       charactor.style.height = "330px";
       charactor.style.bottom = "30px";
     }, 4000);
@@ -132,7 +132,7 @@ function rightAnimation() {
     charactor.style.height = "450px";
 
     setTimeout(function () {
-      charactor.src = "animation-img/Terry-Bogard/starting.gif";
+      charactor.src = "animation-img/Terry-Bogard/standingPositions.gif";
       charactor.style.height = "330px";
     }, 1300);
   }
@@ -142,7 +142,7 @@ function rightAnimation() {
     charactor.style.height = "450px";
 
     setTimeout(function () {
-      charactor.src = "animation-img/Terry-Bogard/starting.gif";
+      charactor.src = "animation-img/Terry-Bogard/standingPositions.gif";
       charactor.style.height = "330px";
     }, 3700);
   }
@@ -153,7 +153,7 @@ function rightAnimation() {
     charactor.style.bottom = "0px";
 
     setTimeout(function () {
-      charactor.src = "animation-img/Terry-Bogard/starting.gif";
+      charactor.src = "animation-img/Terry-Bogard/standingPositions.gif";
       charactor.style.height = "330px";
       charactor.style.bottom = "30px";
     }, 3000);
