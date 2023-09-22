@@ -1,7 +1,12 @@
+@font-face {
+  font-family: "DragonHunter";
+  src: url(fonts/DragonHunter.otf);
+}
 * {
   padding: 0;
   margin: 0;
   overflow: hidden;
+  font-family: "DragonHunter";
 }
 .container {
   background-image: url(animation-img/background2.gif);
@@ -23,4 +28,11 @@
   bottom: 30px;
   height: 330px;
   right: 80px;
+}
+#timer {
+  color: white;
+  margin: 0 auto;
+  font-size: 6em;
+  text-align: center;
+  color: #fe6a03;
 }

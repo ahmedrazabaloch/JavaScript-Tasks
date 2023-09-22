@@ -2,11 +2,16 @@ var timeInSeconds = 60;
 
 function updateTimer() {
   const timerElement = document.getElementById("timer");
-  timerElement.textContent = timeInSeconds + " seconds";
+  timerElement.textContent = timeInSeconds;
 
   if (timeInSeconds === 0) {
     timerElement.textContent = "Time's up!";
+    timerElement.style.fontSize = "2em";
     clearInterval(interval);
+    swal({
+      title: "Time's Up!",
+      imageUrl: "animation-img/gameOver.png",
+    });
   } else {
     timeInSeconds--;
   }
