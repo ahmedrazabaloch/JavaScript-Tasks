@@ -99,7 +99,7 @@ function rightAnimation() {
     charactor.src = "animation-img/Terry-Bogard/walkback.gif";
 
     setTimeout(function () {
-      charactor.src = "animation-img/Terry-Bogard/starting.gif";
+      charactor.src = "animation-img/Terry-Bogard/standingPositions.gif";
       charactor.style.height = "330px";
     }, 1000);
   }
