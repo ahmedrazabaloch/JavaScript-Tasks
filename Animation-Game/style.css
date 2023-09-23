@@ -5,7 +5,7 @@
 * {
   padding: 0;
   margin: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   font-family: "DragonHunter";
 }
 .container {
@@ -35,4 +35,12 @@
   font-size: 6em;
   text-align: center;
   color: #fe6a03;
+}
+#posterContainer {
+  /* display: none; */
+  width: 100%;
+}
+
+#posterContainer:first-child img{
+  width: 60%;
 }
