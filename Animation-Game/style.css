@@ -41,5 +41,5 @@
   width: 100%;
   position: absolute;
   z-index: 33;
-
+  transition: 3s;
 }
