@@ -1,15 +1,13 @@
-function reload() {
-  location.reload();
-}
+// function reload() {
+//   location.reload();
+// }
 var poster = document.getElementById("poster");
 poster.style.display = "block";
 setTimeout(function () {
   poster.style.display = "none";
 }, 3000);
 
-// reload()
-
-var timeInSeconds = 60;
+var timeInSeconds = 62;
 
 function updateTimer() {
   const timerElement = document.getElementById("timer");
@@ -25,7 +23,7 @@ function updateTimer() {
       imageUrl: "animation-img/gameOver.png",
     });
     setTimeout(function () {
-      reload();
+      location.reload();
     }, 3000);
   } else {
     timeInSeconds--;
