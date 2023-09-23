@@ -37,18 +37,8 @@
   color: #fe6a03;
 }
 #posterContainer {
-  /* display: none; */
+  display: none;
   width: 100%;
   position: relative;
 }
 
-#posterContainer > img {
-  width: 60%;
-  margin: 0 auto;
-  position: absolute;
-  z-index: 2;
-}
-
-#figter > img {
-  position: absolute;
-}
